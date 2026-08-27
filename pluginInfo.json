@@ -1,0 +1,18 @@
+{
+  "repoName": "fpp-artnet-prop-control-secondary",
+  "name": "Art-Net Prop Control (Secondary)",
+  "author": "lindsayrobinson",
+  "description": "FPP 10 Art-Net controller for Letters plus two alternating Festoon pixel groups: slots 10-14 control pixels 1,3,5... and slots 20-24 control pixels 2,4,6..., with independent colour modes, Effect/sequence pattern support, local dimmers and final global master.",
+  "homeURL": "https://github.com/lindsayrobinson/fpp-artnet-prop-control-secondary",
+  "srcURL": "https://github.com/lindsayrobinson/fpp-artnet-prop-control-secondary.git",
+  "bugURL": "https://github.com/lindsayrobinson/fpp-artnet-prop-control-secondary/issues",
+  "allowUpdates": 1,
+  "versions": [
+    {
+      "minFPPVersion": "10.0",
+      "maxFPPVersion": "0",
+      "branch": "main",
+      "sha": ""
+    }
+  ]
+}

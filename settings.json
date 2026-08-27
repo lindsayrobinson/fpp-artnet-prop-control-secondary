@@ -1,0 +1,124 @@
+{
+  "settingGroups": {
+    "APCSGeneral": {
+      "description": "Art-Net Prop Control (Secondary)",
+      "settings": [
+        "APCSBypass",
+        "APCSControlBaseChannel"
+      ]
+    },
+    "APCSLetters": {
+      "description": "Letters — slots 2 brightness, 3 red, 4 green, 5 blue, 6 colour mode",
+      "settings": [
+        "APCSLettersStartChannel",
+        "APCSLettersPixels",
+        "APCSLettersColorOrder"
+      ]
+    },
+    "APCSFestoon": {
+      "description": "Festoon — A uses pixels 1,3,5... on slots 10-14; B uses pixels 2,4,6... on slots 20-24",
+      "settings": [
+        "APCSFestoonStartChannel",
+        "APCSFestoonPixels",
+        "APCSFestoonColorOrder"
+      ]
+    }
+  },
+  "settings": {
+    "APCSBypass": {
+      "name": "APCSBypass",
+      "description": "Bypass processing",
+      "tip": "When enabled, leave all pixel data untouched. Defaults ON for a safe first install.",
+      "type": "checkbox",
+      "default": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSControlBaseChannel": {
+      "name": "APCSControlBaseChannel",
+      "description": "FPP control start channel",
+      "tip": "FPP channel receiving Art-Net slot 1. Slots 1-24 must map consecutively from here. Recommended: 10001.",
+      "type": "number",
+      "default": 10001,
+      "min": 1,
+      "max": 8388585,
+      "step": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSLettersStartChannel": {
+      "name": "APCSLettersStartChannel",
+      "description": "Letters start channel",
+      "tip": "1-based FPP start channel for the first Letters RGB pixel.",
+      "type": "number",
+      "default": 6001,
+      "min": 1,
+      "step": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSLettersPixels": {
+      "name": "APCSLettersPixels",
+      "description": "Letters pixel count",
+      "type": "number",
+      "default": 149,
+      "min": 0,
+      "step": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSLettersColorOrder": {
+      "name": "APCSLettersColorOrder",
+      "description": "Letters channel order",
+      "type": "select",
+      "default": 0,
+      "options": {
+        "RGB": 0,
+        "RBG": 1,
+        "GRB": 2,
+        "GBR": 3,
+        "BRG": 4,
+        "BGR": 5
+      },
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSFestoonStartChannel": {
+      "name": "APCSFestoonStartChannel",
+      "description": "Festoon start channel",
+      "tip": "1-based FPP start channel for the first Festoon RGB pixel.",
+      "type": "number",
+      "default": 1,
+      "min": 1,
+      "step": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSFestoonPixels": {
+      "name": "APCSFestoonPixels",
+      "description": "Festoon pixel count",
+      "type": "number",
+      "default": 2000,
+      "min": 0,
+      "step": 1,
+      "restart": 0,
+      "reboot": 0
+    },
+    "APCSFestoonColorOrder": {
+      "name": "APCSFestoonColorOrder",
+      "description": "Festoon channel order",
+      "type": "select",
+      "default": 0,
+      "options": {
+        "RGB": 0,
+        "RBG": 1,
+        "GRB": 2,
+        "GBR": 3,
+        "BRG": 4,
+        "BGR": 5
+      },
+      "restart": 0,
+      "reboot": 0
+    }
+  }
+}
