@@ -167,7 +167,7 @@ protected:
 
 private:
     static constexpr int kMaxChannels = FPPD_MAX_CHANNELS;
-    static constexpr int64_t kOverlayHoldMs = 750;
+    static constexpr int64_t kOverlayHoldMs = 0;
 
     std::atomic<bool> bypass_{true};
     std::atomic<int> controlBaseChannel_{10001};
